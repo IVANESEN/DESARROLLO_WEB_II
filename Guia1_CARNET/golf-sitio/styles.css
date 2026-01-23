@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(248, 250, 252, 1);
+}
+
+.hero-bg {
+  position: relative;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.78)),
+    url("./images/hero-golf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(10px);
+}
+
+.ficon {
+  color: rgba(17, 24, 39, 0.72);
+  transition: 200ms ease;
+}
+
+.ficon:hover {
+  filter: invert(33%) sepia(65%) saturate(520%) hue-rotate(110deg) brightness(98%) contrast(92%);
+}
+
+@media (max-width: 768px) {
+  .hero-bg {
+    background-position: center top;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-bg {
+    background-position: center;
+  }
+}
